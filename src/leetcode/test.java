@@ -11,6 +11,8 @@ import leetcode.arg.ArgRotate;
 import leetcode.arg.ArgRotate2;
 import leetcode.arg.ContainsDuplicate;
 import leetcode.arg.IsValidSudoku;
+import leetcode.design.MinStack;
+import leetcode.design.MinStack2;
 
 public class test {
 
@@ -22,8 +24,18 @@ public class test {
 //		a2.main();
 //		ContainsDuplicate a3=new ContainsDuplicate();
 //		a3.main();
-		IsValidSudoku a4=new IsValidSudoku();
-		a4.main();
+//		IsValidSudoku a4=new IsValidSudoku();
+//		a4.main();
+//		MinStack2 s=new MinStack2();
+//		s.push(2);
+//		s.push(0);
+//		s.push(3);
+//		s.push(0);
+//		s.pop();
+//		s.pop();
+//		System.out.println(s.getMin());
+//		s.pop();
+//		System.out.println(s.getMin());
 	}
 	
 	
