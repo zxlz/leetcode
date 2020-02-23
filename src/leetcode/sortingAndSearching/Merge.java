@@ -51,6 +51,12 @@ public class Merge {
 		}
 		System.arraycopy(res, 0,nums1,0,m+n);
     }
+	/**
+	 * 尾插法
+由于 nums1 有足够的空间（空间大小大于或等于 m + n）来保存 nums2 中的元素，
+所以从 k=m+n-1 开始，分别遍历 nums1[m...0] 和 nums2[n...0] 中选取值大的。
+
+	 */
 	 public void merge1(int[] nums1, int m, int[] nums2, int n) {
 	        int a = m - 1;
 	        int b = n - 1;
