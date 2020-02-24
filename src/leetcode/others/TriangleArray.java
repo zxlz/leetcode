@@ -19,46 +19,6 @@ public class TriangleArray {
 		int n=100000;
 		while(n>0) {
 //			ArrayList<Integer> obj = new ArrayList<Integer>() {{
-//			    add(1);
-//			    add(2); 
-//			    add(3);
-//			    add(4);
-//			    add(5);
-//			    add(2);
-//			    add(6);
-//			    add(224);
-//			    add(652);
-//			    add(2234);
-//			    add(1);
-//			    add(2); 
-//			    add(3);
-//			    add(4);
-//			    add(5);
-//			    add(2);
-//			    add(6);
-//			    add(224);
-//			    add(652);
-//			    add(2234);
-//			    add(1);
-//			    add(2); 
-//			    add(3);
-//			    add(4);
-//			    add(5);
-//			    add(2);
-//			    add(6);
-//			    add(224);
-//			    add(652);
-//			    add(2234);
-//			    add(1);
-//			    add(2); 
-//			    add(3);
-//			    add(4);
-//			    add(5);
-//			    add(2);
-//			    add(6);
-//			    add(224);
-//			    add(652);
-//			    add(2234);
 //			}};
 //			ArrayList<Integer> obj =new ArrayList<Integer>(Arrays.asList(1, 2,3,4,5,2,6,6,3,3,5,34,5,34,534,53,45,2,3,24,234,5,23,523,2));
 			n--;
@@ -86,6 +46,34 @@ public class TriangleArray {
     		
     	}
 		return res;
+
+    }
+    /**
+     * 杨辉三角 II
+给定一个非负索引 k，其中 k ≤ 33，返回杨辉三角的第 k 行。
+
+
+1
+1  1
+1  2  1
+1  3  3  1
+1  4  6  4  1
+1  5  10 10 5  1
+1  6  15 20 15 6 1
+     */
+    public List<Integer> getRow(int rowIndex) {
+    	//return generate(rowIndex+1).get(rowIndex);
+        rowIndex++;   //从0开始
+       List<Integer> res = new ArrayList<Integer>();
+       res.add(1);
+       long tem = 1;
+       for (int i = 1; i < rowIndex; i++)
+       {
+           tem = tem * (rowIndex - i) / i;
+           res.add((int)tem);
+       }
+       return res;
+    	
 
     }
 }
