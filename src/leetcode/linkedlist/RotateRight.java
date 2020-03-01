@@ -53,10 +53,10 @@ public class RotateRight {
 	 * k 0 - intmax;
 	 */
     public ListNode rotateRight(ListNode head, int k) {
-    	ListNode node=head;
     	ListNode fast=head;
     	ListNode slow=head;
     	int i=k;
+    	if(head==null||head.next==null) return head;
     	// 1 2 3 4 5
     	// 
     	while(i!=0) {
@@ -76,11 +76,13 @@ public class RotateRight {
     		}
     	}
     	
-    	while(fast!=null) {
+    	while(fast.next!=null) {//移动slow到新head
     		fast=fast.next;
     		slow=slow.next;
     	}
-    	
+    	fast.next=head;
+    	head=slow.next;
+    	slow.next=null;
     	
 		return head;
 
