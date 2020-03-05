@@ -13,6 +13,7 @@ import leetcode.arg.ContainsDuplicate;
 import leetcode.arg.IsValidSudoku;
 import leetcode.design.MinStack;
 import leetcode.design.MinStack2;
+import leetcode.hashTable.RandomizedSet;
 
 public class test {
 
@@ -36,6 +37,16 @@ public class test {
 //		System.out.println(s.getMin());
 //		s.pop();
 //		System.out.println(s.getMin());
+		RandomizedSet set= new RandomizedSet();
+		set.insert(1);
+		set.insert(10);
+		set.insert(20);
+		set.insert(30);
+		int count=1000;
+		while(count-->0) {
+			System.out.println(set.getRandom());
+		}
+		
 	}
 	
 	
