@@ -25,14 +25,38 @@ k = 1
 1 <= k <= len(nums) * (len(nums) - 1) / 2.
 
  * @author zxl
- *
+ *找出第 k 小的距离对
  */
 public class SmallestDistancePair {
-    public int smallestDistancePair(int[] nums, int k) {
+	public int smallestDistancePair(int[] nums, int k) {
     	Arrays.sort(nums);
+    	int minDiff =0;
+    	int maxDiff=nums[nums.length-1]-nums[0];
+    	while(minDiff<maxDiff) {
+    		int midDiff=(minDiff+maxDiff)>>1;
+    		int count=findCountByDiff(nums,midDiff);//距离小于midDiff的数量
+    		if(count<k) {
+    			minDiff=midDiff+1;
+    		}else {
+    			maxDiff=midDiff;
+    		}
+    	}
     	
-    	
-		return k;
+		return minDiff;
 
     }
+    //距离小于等于midDiff的数量
+	private int findCountByDiff(int[] nums, int diff) {
+		// TODO Auto-generated method stub
+		int len=nums.length; int big=nums.length-1;
+		int res=0;
+		for (int i = nums.length-2; i >=0; --i) {
+			while(big>i && nums[big]-nums[i]>diff) {
+				big--;
+			}
+			res +=big-i;
+		}
+		return res;
+	}
+     
 }

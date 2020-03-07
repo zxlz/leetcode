@@ -29,7 +29,6 @@ import java.util.Queue;
  */
 public class LevelOrder {
 	public List<List<Integer>> levelOrder(TreeNode root) {
-		 
 		if(root == null){
             return new ArrayList<>();
         }
@@ -56,6 +55,5 @@ public class LevelOrder {
 		}
 		 
 		return res;
-        
     }
 }
