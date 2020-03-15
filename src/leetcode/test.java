@@ -13,6 +13,8 @@ import leetcode.arg.ContainsDuplicate;
 import leetcode.arg.IsValidSudoku;
 import leetcode.design.MinStack;
 import leetcode.design.MinStack2;
+import leetcode.design2.LRUCache;
+import leetcode.design2.MedianFinder;
 import leetcode.hashTable.RandomizedSet;
 import leetcode.tree.KthLargest;
 
@@ -47,15 +49,29 @@ public class test {
 //		while(count-->0) {
 //			System.out.println(set.getRandom());
 //		}
-		KthLargest a = new KthLargest(3,new int[] {4,5,8,2});
-		a.add(3);
-		a.add(5);
-		a.add(10);
-		a.add(9);
-		a.add(4);
+//		KthLargest a = new KthLargest(3,new int[] {4,5,8,2});
+//		a.add(3);
+//		a.add(5);
+//		a.add(10);
+//		a.add(9);
+//		a.add(4);
 		
-		
-		
+//		LRUCache lru=new LRUCache(2);
+//		lru.put(1,1);
+//		lru.put(2,2);
+//		System.out.println(lru.get(1));
+//		lru.put(3, 3);
+//		System.out.println(lru.get(2));
+//		lru.put(4,4);
+//		System.out.println(lru.get(1));
+//		System.out.println(lru.get(3));
+//		System.out.println(lru.get(4));
+		MedianFinder m=new MedianFinder();
+		m.addNum(1);
+		m.addNum(2);
+		System.out.println(m.findMedian());
+		m.addNum(3);
+		System.out.println(m.findMedian());
 	}
 	
 	

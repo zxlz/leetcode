@@ -22,8 +22,25 @@ package leetcode.dynamicProgramming2;
  *
  */
 public class MaxCoins {
-    public int maxCoins(int[] nums) {
-    	
+	//i到j个球 
+	//dp[i][j]=dp[i][k-1]+dp[k+1][j]+nums[i-1]nums[k]nums[j+1]  i<=k<=j
+	//和回溯也是n！，但可以用记忆化cache
+	int[][] dp ;
+	public int maxCoins(int[] nums) {
+		dp= new int[nums.length][nums.length];
+		helper(nums,0,nums.length-1);
 		return 0;
     }
+	private int helper(int[] nums, int i, int j) {
+		// TODO Auto-generated method stub
+		if(i>j)return 0;
+		if(dp[i][j]>0)return dp[i][j];
+		for (int k = i; k <= j; k++) {
+			int left=helper(nums, i, k-1);
+			int right=helper(nums, k+1, j);
+			int cur=nums[k]*i==0?1:nums[i-1]*j==nums.length-1?1:nums[j+1];
+			dp[i][j]=Math.max(cur+left+right, dp[i][j]);
+		}
+		return dp[i][j];
+	}
 }
