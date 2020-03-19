@@ -66,6 +66,8 @@ public class test {
 //		System.out.println(lru.get(1));
 //		System.out.println(lru.get(3));
 //		System.out.println(lru.get(4));
+		ThreadLocal a=new ThreadLocal<String>();
+		a.equals("");
 		MedianFinder m=new MedianFinder();
 		m.addNum(1);
 		m.addNum(2);
