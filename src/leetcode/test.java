@@ -7,10 +7,13 @@ import java.util.Arrays;
 import java.util.Properties;
 import java.util.ResourceBundle;
 
+import javax.swing.plaf.SliderUI;
+
 import leetcode.arg.ArgRotate;
 import leetcode.arg.ArgRotate2;
 import leetcode.arg.ContainsDuplicate;
 import leetcode.arg.IsValidSudoku;
+import leetcode.concurrency.Foo;
 import leetcode.design.MinStack;
 import leetcode.design.MinStack2;
 import leetcode.design2.LRUCache;
@@ -66,14 +69,84 @@ public class test {
 //		System.out.println(lru.get(1));
 //		System.out.println(lru.get(3));
 //		System.out.println(lru.get(4));
-		ThreadLocal a=new ThreadLocal<String>();
-		a.equals("");
-		MedianFinder m=new MedianFinder();
-		m.addNum(1);
-		m.addNum(2);
-		System.out.println(m.findMedian());
-		m.addNum(3);
-		System.out.println(m.findMedian());
+//		ThreadLocal a=new ThreadLocal<String>();
+//		a.equals("");
+//		MedianFinder m=new MedianFinder();
+//		m.addNum(1);
+//		m.addNum(2);
+//		System.out.println(m.findMedian());
+//		m.addNum(3);
+//		System.out.println(m.findMedian());
+		
+		Foo foo = new Foo();
+		Thread t1 = new Thread(new Runnable() {
+			@Override
+			public void run() {
+				try {
+					foo.first(() -> {
+						try {
+							Thread.sleep((long) (Math.random()*1000));
+						} catch (InterruptedException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+						System.out.println("one");	
+					});
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+			}
+		});
+		Thread t2 = new Thread(new Runnable() {
+			@Override
+			public void run() {
+				try {
+					foo.second(() -> {
+						try {
+							Thread.sleep((long) (Math.random()*1000));
+						} catch (InterruptedException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+						System.out.println("two");	
+					});
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+			}
+		});
+		Thread t3 = new Thread(new Runnable() {
+			@Override
+			public void run() {
+				try {
+					foo.third(() -> {
+						try {
+							Thread.sleep((long) (Math.random()*1000));
+						} catch (InterruptedException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+						System.out.println("three");	
+					});
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+			}
+		});
+		t1.start();
+		t2.start();
+		t3.start();
+		System.out.println("o1ne");
+		
+		
+		
+		
 	}
 	
 	
