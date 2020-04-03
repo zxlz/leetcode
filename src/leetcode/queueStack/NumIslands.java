@@ -45,7 +45,7 @@ public class NumIslands {
     }
 
 	private void dfs(int i, int j, char[][] grid) {
-		// TODO Auto-generated method stub
+
 		grid[i][j]='0';
 		if(i>0 && grid[i-1][j]=='1') {
 			dfs(i-1,j,grid);

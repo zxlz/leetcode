@@ -21,7 +21,7 @@ public class IsSymmetric {
     }
 
 	private boolean checkSymmetric(TreeNode left, TreeNode right) {
-		// TODO Auto-generated method stub
+
 		if(left==null )return right==null;
 		if(right==null)return false;
 		

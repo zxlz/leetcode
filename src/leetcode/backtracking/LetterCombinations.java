@@ -38,7 +38,7 @@ public class LetterCombinations {
 			res.add(new String(cs));
 			return;
 		}
-		 // TODO Auto-generated method stub
+
 		for(char c:table[numbers[nbi]-'0']) {
 			cs[nbi]=c;
 			dfs(nbi+1);

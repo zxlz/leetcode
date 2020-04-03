@@ -60,7 +60,7 @@ public class SplitArray {
 
 	 //子数组和不超过sumOfMidM时需要的数组分组
 	private int findMOfSum(int[] nums, long midSum) {
-		// TODO Auto-generated method stub
+
 		long sum=0;
 		int count=1;
 		for(int i=0;i<nums.length;i++) {

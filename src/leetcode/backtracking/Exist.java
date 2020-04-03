@@ -46,7 +46,7 @@ public class Exist {
     }
 
 	private boolean find(int i, int j,int wordIndex) {
-		// TODO Auto-generated method stub
+
 	
 		visited[i][j]=true;
 		if( i<rownum-1 && !visited[i+1][j] &&board[i+1][j]==word[wordIndex]) {

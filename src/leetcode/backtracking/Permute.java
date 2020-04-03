@@ -40,7 +40,7 @@ public class Permute {
 			res.add( new ArrayList<Integer>(Arrays.asList(comb)) );
 			return;
 		}
-		// TODO Auto-generated method stub
+
 		for (int j = 0; j < nums.length; j++) {
 			if(used[j]==false) {
 				comb[index]=nums[j];

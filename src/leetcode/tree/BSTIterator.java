@@ -9,7 +9,7 @@ public class BSTIterator {
     }
     
     private void findLeft(TreeNode root) {
-		// TODO Auto-generated method stub
+
     	while(root!=null) {
     		stack.push(root);
     		root=root.left;
@@ -17,7 +17,7 @@ public class BSTIterator {
 	}
 //	//左根右
 //    private void ldr(TreeNode root) {
-//		// TODO Auto-generated method stub
+//
 //    	if(root==null)return;
 //    	ldr(root.left);
 //    	queue.offer(root.val);

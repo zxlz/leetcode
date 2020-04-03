@@ -30,7 +30,7 @@ public class IsBalanced {
 	 }
 	
 	private int findLevel(TreeNode root) {
-		// TODO Auto-generated method stub
+
 			if(root==null)return 1;
 			int l=findLevel(root.left);
 			if(l==0)return 0;

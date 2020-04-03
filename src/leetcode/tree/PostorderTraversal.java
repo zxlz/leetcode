@@ -46,7 +46,7 @@ public class PostorderTraversal {
     }
 
 	private void postorder(List<Integer> res, TreeNode root) {
-		// TODO Auto-generated method stub
+
 		if(root==null)return;
 		postorder(res, root.left);
 		postorder(res, root.right);

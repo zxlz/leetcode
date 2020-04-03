@@ -49,7 +49,7 @@ public class Partition {
     }
 
 	private void dfs(char[] chars, int left, int len, Deque<String> stack) {
-		// TODO Auto-generated method stub
+
 		if(left==len) {
 			res.add(new ArrayList<String>(stack));return;
 		}
@@ -65,7 +65,7 @@ public class Partition {
 	}
 
 	private boolean checkPalindrome(char[] chars, int left, int right) {
-		// TODO Auto-generated method stub
+
 		while(left<right) {
 			if(chars[left]!=chars[right]) {
 				return false;

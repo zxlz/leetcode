@@ -1,7 +1,6 @@
 package leetcode.lcp;
 
 import org.junit.Test;
-import org.junit.jupiter.params.shadow.com.univocity.parsers.common.processor.RowListProcessor;import leetcode.arg.DominantIndex;
 
 /**
  * 你有一块棋盘，棋盘上有一些格子已经坏掉了。你还有无穷块大小为1 * 2的多米诺骨牌，你想把这些骨牌不重叠地覆盖在完好的格子上，请找出你最多能在棋盘上放多少块骨牌？这些骨牌可以横着或者竖着放。
@@ -34,7 +33,7 @@ public class Domino {
 		
 		
 //		System.out.println(domino(2, 3, new int[][]{{1, 0}, {1, 1}}));
-		System.out.println(domino(8, 8, new int[][]{{0, 1}, {2, 0}, {4, 3}, {4, 7}, {5, 4}}));
+		System.out.println(domino(8, 8, new int[][]{{0, 1}, {2, 0}, {4, 3}, {4, 7}, {5, 4}, {3, 4}}));
 	}
 	//匈牙利算法/二分图匹配
 	private int colLen;
@@ -51,8 +50,8 @@ public class Domino {
 		colLen=m;
     	rowLen=n;
     	bad = new boolean[n][m];
-    	for (int i = 0; i < broken.length; i++) {
-    		bad[broken[i][0]][broken[i][1]]=true;
+		for (int i = 0; i < broken.length; i++) {
+			bad[broken[i][0]][broken[i][1]]=true;
 		}
     	int res = 0;
     	
@@ -108,7 +107,7 @@ public class Domino {
 //    }
 //
 //	private int dfs(int row, int col, int depth) {
-//		// TODO Auto-generated method stub
+//
 //		
 //		if(col>=colLen) {
 //			row++;col=0;

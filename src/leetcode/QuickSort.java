@@ -90,7 +90,7 @@ public class QuickSort {
     }
 
     private void swap(int[] arr, int i, int j) {
-        // TODO Auto-generated method stub
+
         int t=arr[i];
         arr[i]=arr[j];
         arr[j]=t;

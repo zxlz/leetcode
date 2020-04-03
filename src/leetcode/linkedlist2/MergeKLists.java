@@ -30,7 +30,7 @@ public class MergeKLists {
     	PriorityQueue<ListNode> minHeap=new PriorityQueue<ListNode>(new Comparator<ListNode>() {
 			@Override
 			public int compare(ListNode o1, ListNode o2) {
-				// TODO Auto-generated method stub
+
 				return o1.val-o2.val;
 			}
 		});

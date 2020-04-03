@@ -81,7 +81,7 @@ public class MyLinkedList {
     }
     
     private void linkBefore(int val, Node succ) {
-		// TODO Auto-generated method stub
+
     	// assert succ != null;
         final Node pred = succ.prev;
         final Node newNode = new Node(pred, val, succ);

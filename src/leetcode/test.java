@@ -24,7 +24,7 @@ import leetcode.tree.KthLargest;
 public class test {
 
 	public static void main(String[] args) throws Exception {
-		// TODO Auto-generated method stub
+
 //		ArgRotate a = new ArgRotate();
 		//a.main();
 //		ArgRotate2 a2 = new ArgRotate2();
@@ -87,13 +87,13 @@ public class test {
 						try {
 							Thread.sleep((long) (Math.random()*1000));
 						} catch (InterruptedException e) {
-							// TODO Auto-generated catch block
+
 							e.printStackTrace();
 						}
 						System.out.println("one");	
 					});
 				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
+
 					e.printStackTrace();
 				}
 				
@@ -107,13 +107,13 @@ public class test {
 						try {
 							Thread.sleep((long) (Math.random()*1000));
 						} catch (InterruptedException e) {
-							// TODO Auto-generated catch block
+
 							e.printStackTrace();
 						}
 						System.out.println("two");	
 					});
 				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
+
 					e.printStackTrace();
 				}
 				
@@ -127,13 +127,13 @@ public class test {
 						try {
 							Thread.sleep((long) (Math.random()*1000));
 						} catch (InterruptedException e) {
-							// TODO Auto-generated catch block
+
 							e.printStackTrace();
 						}
 						System.out.println("three");	
 					});
 				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
+
 					e.printStackTrace();
 				}
 				

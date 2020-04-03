@@ -34,7 +34,7 @@ public class NestedIterator  implements Iterator<Integer> {
 	
 
     private void dfs(List<NestedInteger> nestedList) {
-		// TODO Auto-generated method stub
+
 //		List<Integer> temp = new ArrayList<Integer>(nestedList.size());
 //		Iterator<NestedInteger> iterator=nestedList.iterator();
 		for(NestedInteger n:nestedList) {

@@ -45,7 +45,7 @@ public class FindDuplicateSubtrees {
 //    }
 //
 //	private String dfs(TreeNode root) {
-//		// TODO Auto-generated method stub
+//
 //		if(root==null) return "#";
 //			String temp=root.val+dfs(root.left)+dfs(root.right);
 //		Integer i=map.get(temp);

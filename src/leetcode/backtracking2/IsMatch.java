@@ -70,7 +70,7 @@ public class IsMatch {
     }
 
 	private boolean find(char[] sArray, int sIndex, char[] pArray, int pIndex) {
-		// TODO Auto-generated method stub
+
 		
 		if(sIndex>=0 && pIndex>=0) {
 			if(visited[sIndex][pIndex])return false;

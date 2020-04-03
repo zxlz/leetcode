@@ -55,7 +55,7 @@ public class LongestIncreasingPath {
     }
 
 	private int dfs(int i, int j, int[][] matrix, int[][] cache) {
-		// TODO Auto-generated method stub
+
 		if(cache[i][j]>0)return cache[i][j];
 		int top=0,left=0,down=0,right=0;
 		if(i>0 && matrix[i-1][j]>matrix[i][j])

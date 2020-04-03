@@ -26,7 +26,7 @@ public class InorderTraversal {
    }
 
 //	private void ldr(TreeNode root) {
-//		// TODO Auto-generated method stub
+//
 //		if(root!=null) {
 //			ldr(root.left);
 //			list.add(root.val);

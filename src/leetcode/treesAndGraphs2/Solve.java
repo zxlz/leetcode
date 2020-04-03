@@ -67,7 +67,7 @@ public class Solve {
 	}
 
 	private void bfs(int i, int j, char[][] board, Queue<int[]> queue) {
-		// TODO Auto-generated method stub
+
 		if (board[i][j] == 'O' ) {// 没被访问的边界0，bfs
 			// --bfs
 			queue.offer(new int[] { i, j });
