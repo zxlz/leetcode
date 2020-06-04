@@ -72,9 +72,6 @@ public class MinimumLengthEncoding {
         }else {
             return 0;
         }
-        
-        
-        
     }
     private TrieNode root=new TrieNode(0);
     //建后缀树，同时统计，如果1.是新节点 则返回长度，并消掉子单词标记减去子单词的长，2.是已有路径上的子单词，则0返回
