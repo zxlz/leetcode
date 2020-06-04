@@ -25,7 +25,7 @@ public class LargestRectangleArea {
     }
 
 	private int DivideAndConquer(int[] heights, int start, int end) {
-		// TODO Auto-generated method stub
+
 		if(start>end)return 0;
 //		System.out.println("start:"+start+"end:"+end);
 		int minIndex=start;

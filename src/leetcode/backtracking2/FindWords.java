@@ -55,7 +55,7 @@ public class FindWords {
     	return res;
     }
     private void find(int i, int j, TrieNode trieNode, char[][] board, boolean[][] visited) {
-		// TODO Auto-generated method stub
+
     	if(i<0 || i>=rows || j<0 || j>=cols || visited[i][j] )return;//找到边界或者重复，返回
     	int ch=board[i][j]-'a';
 			if((trieNode=trieNode.next[ch])==null)return;//没有找到，返回

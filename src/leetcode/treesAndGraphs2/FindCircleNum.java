@@ -39,7 +39,7 @@ public class FindCircleNum {
     }
 	
 	private void dfs(boolean[] visited, int[][] M, int i) {
-		// TODO Auto-generated method stub
+
 		for (int j = 0; j < M.length; j++) {
 			visited[j]=true;
 			if(M[i][j]==1 && !visited[j]) {

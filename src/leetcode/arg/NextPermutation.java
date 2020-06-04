@@ -26,7 +26,7 @@ public class NextPermutation {
     }
     
     private void reverse(int[] nums, int i) {
-		// TODO Auto-generated method stub
+
 		int l=i,r=nums.length-1;
 		while(l<r) {
 			swap(nums, l++, r--);

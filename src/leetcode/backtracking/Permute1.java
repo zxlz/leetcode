@@ -30,7 +30,7 @@ public class Permute1 {
 			return;
 		}
 		
-		// TODO Auto-generated method stub
+
 		for (int j = 0; j < nums.length; j++) {
 			if(used[j]==false) {
 				if(j>0 && nums[j]==nums[j-1] && !used[j-1]) continue;

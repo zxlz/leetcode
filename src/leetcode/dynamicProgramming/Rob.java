@@ -34,7 +34,7 @@ public class Rob {
     }
 
 	private int rob(int[] nums, int n) {
-		// TODO Auto-generated method stub
+
 		if(resCache[n]!=null) {
 			return resCache[n];
 		}

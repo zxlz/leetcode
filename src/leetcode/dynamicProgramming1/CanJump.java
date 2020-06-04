@@ -26,7 +26,7 @@ public class CanJump {
     	return dp(needJump,nums.length-1);
     }
 	private boolean dp(int needJump, int i) {
-		// TODO Auto-generated method stub
+
 		if(i==0)return true;
 		while(nums[i-1]<needJump) {
 			i--;

@@ -38,7 +38,7 @@ public class FirstBadVersion {
     }
 
 	private boolean isBadVersion(int i) {
-		// TODO Auto-generated method stub
+
 		
 		return false;
 	}

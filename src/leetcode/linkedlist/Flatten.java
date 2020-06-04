@@ -39,7 +39,7 @@ public class Flatten {
         
     }
 	private Node run(Node node) {
-		// TODO Auto-generated method stub
+
 //		Node cHead=node;
 		while(node!=null) {
 			if(node.child!=null) {

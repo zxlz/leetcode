@@ -47,7 +47,7 @@ public class Subsets {
      * @param temp
      */
 	private void find(int i, List<Integer> temp) {
-		// TODO Auto-generated method stub
+
 		//arrays比linked的构造快，linked是获取array后循环建立节点关系，arrays是直接copy数组。
 		List<Integer> tempRes=new ArrayList<Integer>(temp);
 		res.add(tempRes);

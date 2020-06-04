@@ -10,7 +10,7 @@ import java.util.WeakHashMap;
 public class TestWeakReference {
 
 	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
+
 		
 		HashMap<String,String> map = new HashMap<String, String>();
 		ReferenceQueue<HashMap> re = new ReferenceQueue<HashMap>();

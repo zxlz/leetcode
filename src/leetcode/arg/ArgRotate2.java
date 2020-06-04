@@ -6,7 +6,7 @@ import java.util.Properties;
 
 public class ArgRotate2 {
 	public  void main() throws Exception {
-		// TODO Auto-generated method stub
+
 		Properties pro = new Properties();
 		FileInputStream in = new FileInputStream("/Users/zxl/eclipse-workspace/leetcode/src/leetcode/arg.properties");
 		pro.load(in);

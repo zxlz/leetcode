@@ -37,7 +37,7 @@ public class BuildTreeByPreIn {
 
 	private TreeNode buildTree(int[] inorder, int l, int r, int[] preorder,int l1, int r1) {
 		if(l>r || l1>r1)return null;
-		// TODO Auto-generated method stub
+
 		TreeNode res=new TreeNode(preorder[l1]);
 		/**
 		 * 中序遍历 inorder =  [9,3,15,20,7] 左根右
@@ -54,7 +54,7 @@ public class BuildTreeByPreIn {
 	}
 	//根据值找index
 	private int findIndex(int[] inorder, int val, int l, int r) {
-		// TODO Auto-generated method stub
+
 		for (int i = l; i < r+1; i++) {
 			if(inorder[i]==val)return i;
 		}

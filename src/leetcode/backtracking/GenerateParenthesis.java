@@ -38,7 +38,7 @@ public class GenerateParenthesis {
 	//left 已经使用左括号数左括号小于max，可以一直加
     //right 已经使用右括号数右括号必须小于左括号数
 	private void find(char[] cs, int left, int right, int max, int index) {
-		// TODO Auto-generated method stub
+
 		if(left==max&&right==max) {
 			res.add(new String(cs));
 			return;

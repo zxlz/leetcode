@@ -131,7 +131,7 @@ public class LadderLength {
 	}
 
 	private boolean canConver(String s1, String s2) {
-		// TODO Auto-generated method stub
+
 		if (s1.length() != s2.length())
 			return false;
 		int c = 0;

@@ -32,7 +32,7 @@ public class MaxCoins {
 		return 0;
     }
 	private int helper(int[] nums, int i, int j) {
-		// TODO Auto-generated method stub
+
 		if(i>j)return 0;
 		if(dp[i][j]>0)return dp[i][j];
 		for (int k = i; k <= j; k++) {

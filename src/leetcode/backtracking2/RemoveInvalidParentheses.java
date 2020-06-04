@@ -66,7 +66,7 @@ public class RemoveInvalidParentheses {
 		}
 		
 		//
-		// TODO Auto-generated method stub
+
 		for (int i = start; i < s.length(); i++) {
 			if(i!=start && s.charAt(i)==s.charAt(i-1))continue;
 			if(s.charAt(i)==')'&&errR>0){//先右括号再左括号

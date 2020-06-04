@@ -70,7 +70,7 @@ public class SortList {
      * @return 
      */
 	private ListNode merge(ListNode left, ListNode right, ListNode tempTail) {
-		// TODO Auto-generated method stub
+
 		ListNode pre=new ListNode(0);
 		ListNode cur=pre;
 		while(left!=null && right!=null) {
@@ -101,7 +101,7 @@ public class SortList {
 	}
 	//i i>1;
 	private ListNode cut(ListNode left, int i) {
-		// TODO Auto-generated method stub
+
 		//减到最后一个的前一个
 		while(--i>0 && left!=null) {
 			left=left.next;

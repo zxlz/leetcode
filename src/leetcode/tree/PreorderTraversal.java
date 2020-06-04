@@ -30,7 +30,7 @@ public class PreorderTraversal {
     }
 
 	private void pre(List<Integer> res, TreeNode root) {
-		// TODO Auto-generated method stub
+
 		if(root==null)return;
 		res.add(root.val);
 		pre(res,root.left);

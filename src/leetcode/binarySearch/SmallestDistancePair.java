@@ -47,7 +47,7 @@ public class SmallestDistancePair {
     }
     //距离小于等于midDiff的数量
 	private int findCountByDiff(int[] nums, int diff) {
-		// TODO Auto-generated method stub
+
 		int len=nums.length; int big=nums.length-1;
 		int res=0;
 		for (int i = nums.length-2; i >=0; --i) {

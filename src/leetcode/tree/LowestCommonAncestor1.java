@@ -30,7 +30,7 @@ public class LowestCommonAncestor1 {
 
     //2 1 3      3 1
 	private TreeNode find(TreeNode root, TreeNode p, TreeNode q) {
-		// TODO Auto-generated method stub
+
 		if(root==p || root==q || root==null ) return root;
 		if(p==none && q==none)return null;
 		TreeNode l=null;TreeNode r=null;

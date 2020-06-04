@@ -48,7 +48,7 @@ public class WordBreak {
     }
 
 	private boolean dfs(String s, HashSet<String> hashSet, int start, boolean[] failCache) {
-		// TODO Auto-generated method stub
+
 		if(start==s.length())return true;
 		if(failCache[start])return false;
 		for(int i=start+1;i<=s.length();i++) {

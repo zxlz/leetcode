@@ -38,7 +38,7 @@ public class BuildTreeByInPost {
 
 	private TreeNode buildTree(int[] inorder, int l, int r, int[] postorder,int l1, int r1) {
 		if(l>r || r1<0)return null;
-		// TODO Auto-generated method stub
+
 		TreeNode res=new TreeNode(postorder[r1]);
 //		int inorderIndex=findIndex(inorder,res.val,l,r);
 		int inorderIndex=hashMap.get(res.val);
@@ -52,7 +52,7 @@ public class BuildTreeByInPost {
 	}
 	//根据值找index
 	private int findIndex(int[] inorder, int val, int l, int r) {
-		// TODO Auto-generated method stub
+
 		for (int i = l; i < r+1; i++) {
 			if(inorder[i]==val)return i;
 		}

@@ -32,7 +32,7 @@ public class SortedArrayToBST {
     }
 
 	public TreeNode toBST(int[] nums, int left, int right) {
-		// TODO Auto-generated method stub
+
 		if(left > right) return null;
         int center = (right+left)>>1;
 		TreeNode root=new TreeNode(nums[center]);
